@@ -1,0 +1,14 @@
+{
+    "VALID-KEY-123": {
+        "active": true,
+        "used_by": []
+    },
+    "USED-KEY-456": {
+        "active": true,
+        "used_by": ["some-other-site.com"]
+    },
+    "INACTIVE-KEY-789": {
+        "active": false,
+        "used_by": []
+    }
+}

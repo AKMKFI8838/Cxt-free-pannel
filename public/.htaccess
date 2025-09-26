@@ -1,0 +1,13 @@
+# The following lines are required for cPanel's Passenger Phusion to work correctly.
+# This allows the Node.js application to handle requests.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^(.*)$ http://127.0.0.1:3000/$1 [P,L]
+</IfModule>
+
+# The following lines prevent anyone from directly accessing the .htaccess file.
+<Files .htaccess>
+  order allow,deny
+  deny from all
+</Files>
